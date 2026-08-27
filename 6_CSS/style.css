@@ -1,0 +1,34 @@
+/*body {
+   background-color: white;
+   /*color: blue; /* color for text*/
+   /*font-size: 20px; /* size of text*/
+   /*font-weight: bold;  /* text are lighter, normal, bold*/
+   /*text-align: center; /* left, right , center*/
+   /*margin-top: 0px;  /* from 0px and upwards*/
+/*}*/
+
+img {
+    margin-top: 20px;
+    display: block;
+    width: 400px;
+    height: auto;
+    margin-left: 130px;
+}
+
+input {
+    display: block;
+    width: 400px;
+    height: 36px;
+    margin-left: 130px;
+    border-radius: 20px;
+}
+
+button {
+    background-color: rgb(180, 179, 179);
+    color: black;
+    display: inline;
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+}
