@@ -1,0 +1,25 @@
+body {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.avatar {
+    width: 150Px;
+    height: 150px;
+}
+
+.card {
+    background-color: rgb(212, 223, 222);
+    display: flex;/* image and text are in one line*/
+    padding: 20px;
+    justify-content: space-around;
+    border-bottom: 5px solid blueviolet;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/*.card-details { /* here another div use fo text come to paraller*/
+    /*border: 5px dotted black; to check how its working
+/*}*/
