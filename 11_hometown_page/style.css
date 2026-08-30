@@ -42,7 +42,7 @@ body {
 
 .card {
     background-color: rgb(212, 223, 222);
-    display: flex;/* image and text are in one line*/
+    display: flex;
     padding: 20px;
     justify-content: space-around;
     border-bottom: 5px solid blueviolet;
