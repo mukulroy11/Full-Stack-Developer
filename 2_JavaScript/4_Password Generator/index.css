@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(27, 27, 56);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#generate {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+#passw {
+    color: green;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+p {
+    font-size: small;
+    font-weight: lighter;
+}
+
+
+button {
+    background-color: green;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+div {
+    display: flex;         /* Places the boxes side-by-side */
+    gap: 15px;             /* Sets a permanent, fixed space between them */
+    margin-top: 20px;
+}
+
+.generated-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(13, 13, 31, 0.49);
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-align: justify;
+}
