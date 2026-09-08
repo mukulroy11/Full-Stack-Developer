@@ -1,0 +1,40 @@
+body {
+    display: flex;           /* Turns on Flexbox layouts */
+    justify-content: center; /* Centers content horizontally (left to right) */
+    align-items: center;     /* Centers content vertically (top to bottom) */      /* Makes the body take up the full screen height */
+    margin-top: 0;               /* Removes default space around the webpage edge */
+}
+
+main {
+    background-color: rgb(38, 195, 27);
+    color: darkblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 1px solid black;
+    width: 40%;
+    height: 40%;
+    margin-top: 40px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+#add-btn {
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-weight: bold;
+}
