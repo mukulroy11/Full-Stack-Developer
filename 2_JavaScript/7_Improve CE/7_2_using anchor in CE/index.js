@@ -16,10 +16,14 @@ function renderLeads() {
         // listItems += "<li><a target='_blank' href='" + myLeads[i] +"'>" + myLeads[i] + "</a>"
         // Using Template above list syntx is long
         listItems = `
+        
             <li>
                 <a target='_blank' href="${myLeads[i]}">
+
                     ${myLeads[i]}
-                </a>`
+
+                </a>
+        `
     } 
     ulEl.innerHTML += listItems
 }
