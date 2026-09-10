@@ -16,7 +16,7 @@ button {
     color: white;
     font-weight: bold;
     margin-top: 10px;
-    border: none;
+    border: 1px solid green;
     padding: 10px 30px 10px 30px;
 }
 
@@ -33,4 +33,13 @@ li {
 
 li a {
     color: #5f9341;
+}
+
+#delete-btn {
+    background-color: white;
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+    border: 1px solid green;
+    padding: 10px 30px 10px 30px;
 }

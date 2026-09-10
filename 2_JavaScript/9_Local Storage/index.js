@@ -3,6 +3,7 @@ let myLeads = []
 let inputEl = document.getElementById("input-el")
 let inputBtn = document.getElementById("input-btn")
 let ulEl = document.getElementById("ul-el")
+let deleteBtn = document.getElementById("delete-btn")
 
 // string to array or array to string using JSON
 // myLeads = JSON.parse(myLeads)
@@ -13,7 +14,12 @@ let ulEl = document.getElementById("ul-el")
 // console.log(myLeads)
 // console.log(typeof myLeads)
 
+
 let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+if (leadsFromLocalStorage) {
+    myLeads = leadsFromLocalStorage
+    renderLeads()
+}
 
 inputBtn.addEventListener("click",  () => {
     myLeads.push(inputEl.value)
@@ -22,13 +28,19 @@ inputBtn.addEventListener("click",  () => {
     renderLeads()
 });
 
+deleteBtn.addEventListener("click", () => {
+    localStorage.clear()
+    myLeads = []
+    renderLeads()
+})
+
 function renderLeads() {
     let listItems = ""
     for (let i = 0; i < myLeads.length; i++) {
 
         // listItems += "<li><a target='_blank' href='" + myLeads[i] +"'>" + myLeads[i] + "</a>"
         // Using Template above list syntx is long
-        listItems = `
+        listItems += `
             <li>
                 <a target='_blank' href="${myLeads[i]}">
                     ${myLeads[i]}
@@ -36,5 +48,5 @@ function renderLeads() {
             </li>    
         `
     } 
-    ulEl.innerHTML += listItems
+    ulEl.innerHTML = listItems
 }
