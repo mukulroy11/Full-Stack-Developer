@@ -4,6 +4,7 @@ let inputEl = document.getElementById("input-el")
 let inputBtn = document.getElementById("input-btn")
 let ulEl = document.getElementById("ul-el")
 let deleteBtn = document.getElementById("delete-btn")
+let tabBtn = document.getElementById("save-tab-btn")
 
 // string to array or array to string using JSON
 // myLeads = JSON.parse(myLeads)
@@ -19,6 +20,16 @@ if (leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage
     render(myLeads)
 }
+
+const tabs = [
+    {url : "https://www.linkedin.com/in/"}
+]
+
+tabBtn.addEventListener("click", () => {
+    myLeads.push(tabs[0].url)
+    localStorage.setItem("myLeads", JSON.stringify(myLeads))
+    render(myLeads)
+})
 
 function render(leads) {
     let listItems = ""
