@@ -1,11 +1,11 @@
 // let myLeads = `["www.mukul.com"]`
 let myLeads = []
 
-let inputEl = document.getElementById("input-el")
-let inputBtn = document.getElementById("input-btn")
-let ulEl = document.getElementById("ul-el")
-let deleteBtn = document.getElementById("delete-btn")
-let tabBtn = document.getElementById("save-tab-btn")
+const inputEl = document.getElementById("input-el")
+const inputBtn = document.getElementById("input-btn")
+const ulEl = document.getElementById("ul-el")
+const deleteBtn = document.getElementById("delete-btn")
+const tabBtn = document.getElementById("save-tab-btn")
 // string to array or array to string using JSON
 // myLeads = JSON.parse(myLeads)
 // myLeads.push("www.so.com")
