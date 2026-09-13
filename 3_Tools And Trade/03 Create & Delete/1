@@ -1,0 +1,3 @@
+Create a file: touch <filename> (e.g., touch mountains.txt)
+
+Delete a file: rm <filename> (e.g., rm mountains.txt)

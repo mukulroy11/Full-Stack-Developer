@@ -1,0 +1,7 @@
+pwd (Print Working Directory): Displays the absolute path of the current directory you are in.
+
+ls (List): Lists all files and folders inside the current directory.
+
+cd (Change Directory): Navigates to a different directory (e.g., cd path/to/folder, cd .. to go up one folder, or cd ~ to go home).
+
+clear: Clears all previous commands and output from the terminal screen window.

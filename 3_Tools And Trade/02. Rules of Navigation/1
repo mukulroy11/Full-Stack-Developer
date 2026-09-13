@@ -1,0 +1,16 @@
+
+Use pwd to print your current location.
+
+Navigate (cd) into the target sub-folder.
+
+List (ls) the contents to find the specified file or folder.
+
+Navigate further into sub-directories or back out (cd ..) as instructed.
+
+Use clear to reset the terminal screen when finished
+
+cd .. — Moves up one directory level.
+
+cd ../.. — Moves up two directory levels.
+
+cd ../../../ — Moves up three directory levels.
