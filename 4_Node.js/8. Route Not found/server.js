@@ -1,11 +1,3 @@
-
-// Missing or Mismatched Path:
-
-// Your server expects app.get('/api/users'), but the request sent was GET /users or GET /api/user.
-
-// Wrong HTTP Method:
-
-// You defined app.get('/items'), but a POST or PUT request was sent to /items.
 import http from 'node:http'
 import { getDataFromDB } from './database/db.js'
 
