@@ -1,0 +1,6 @@
+In Node.js, path parameters (or route parameters) are dynamic segments of a URL used to capture values at specific positions in the request path.
+
+For instance, instead of creating separate routes for /users/1, /users/2, and /users/3, you write a single route with a path parameter like /users/:id.
+
+How Path Parameters Work
+Path parameters act like variables inside your URL structure. They are denoted by a colon (:) before the parameter name.
