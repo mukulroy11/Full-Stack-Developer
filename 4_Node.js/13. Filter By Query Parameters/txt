@@ -4,3 +4,9 @@ For instance, instead of creating separate routes for /users/1, /users/2, and /u
 
 How Path Parameters Work
 Path parameters act like variables inside your URL structure. They are denoted by a colon (:) before the parameter name.
+
+
+STRECH GOAL  
+Gentler error handling
+
+Handle POST requests
