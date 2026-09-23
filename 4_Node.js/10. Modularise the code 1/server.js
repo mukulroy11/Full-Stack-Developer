@@ -1,6 +1,7 @@
 import http from 'node:http'
 import { getDataFromDB } from './database/db.js'
 import { sendJSONResponse } from './utils/sendJSONResponse.js'
+import { getDataPathPrams } from './utils/getDataPAthParams.js'
 
 const PORT = 8000
 
@@ -14,9 +15,16 @@ const server = http.createServer(async (req, res) => {
     } else if (req.url.startsWith('/api/continent') && req.method === 'GET') {
 
         const continent = req.url.split('/').pop()
-        const filteredData = destinations.filter( (destinations) => {
-            return destinations.continent.toLowerCase() === continent.toLowerCase()
-        })
+        
+        const filteredData = getDataPathPrams(destinations, 'continent', continent)
+
+        sendJSONResponse(res, 200, filteredData)
+
+    } else if (req.url.startsWith('/api/country') && req.method === 'GET') {
+
+        const country= req.url.split('/').pop()
+        
+        const filteredData = getDataPathPrams(destinations, 'country', country)
 
         sendJSONResponse(res, 200, filteredData)
 
