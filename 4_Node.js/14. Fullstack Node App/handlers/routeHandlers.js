@@ -1,6 +1,7 @@
-import { sendResponse } from "../utils/sendResponse.js"
 import { getData } from "../utils/getData.js"
+import { sendResponse } from "../utils/sendResponse.js"
 import { parseJSONBody } from "../utils/parseJSONBody.js"
+import { addNewSighting } from "../utils/addNewSighting.js"
 
 export async function handleGet(res) {
     const data = await getData()
@@ -11,7 +12,7 @@ export async function handleGet(res) {
 //handle POST
 export async function handlePost(req, res) {
     try {
-        const parseBody = await parseJSONBody()
+        const parseBody = await parseJSONBody(req)
         await addNewSighting(parseBody)
         sendResponse(res, 201, 'application/json', JSON.stringify(parseBody))
 
