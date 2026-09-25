@@ -1,5 +1,5 @@
 import http from "node:http"
-import path from "node:path"
+import { serverStatic } from "./utils/serverStatic.js"
 
 
 const PORT = 8000
@@ -8,10 +8,7 @@ const __dirname = import.meta.dirname
 
 const server = http.createServer((req, res) => {
 
-    const absPathToResource = path.join(__dirname, 'public', 'index.html')
-    const relPathToResource = path.join('public', 'index.html')
-    console.log('absolute: ', absPathToResource)
-    console.log('relative: ', relPathToResource)
+    serverStatic(__dirname)
 
     res.statusCode = 200
     res.setHeader('Content-Type', 'text/html')
