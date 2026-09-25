@@ -10,7 +10,7 @@ const server = http.createServer(async (req, res) => {
 
     const pathToResource = path.join(__dirname, 'public', 'index.html')
 
-    const content = await fs.readFile(pathToResource, 'utf8')
+    const content = await fs.readFile(pathToResource) //utf coruppt the content so do not use
     res.statusCode = 200
     res.setHeader('Content-Type', 'text/html')
     res.end(content)
