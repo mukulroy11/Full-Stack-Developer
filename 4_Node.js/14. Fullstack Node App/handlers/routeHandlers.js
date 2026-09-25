@@ -6,3 +6,8 @@ export async function handleGet(res) {
     const content = JSON.stringify(data)
     sendResponse(res, 200, 'application/json', content)
 }
+
+//handle POST
+export function handlePost(req, res) {
+    console.log('Post request received')
+}
